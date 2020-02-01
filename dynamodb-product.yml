@@ -1,10 +1,10 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: >
-  Builds serverless DynamoDB table.
+Description: Builds a DynamoDB table.
 Resources:
   DemoTable:
     Type: AWS::DynamoDB::Table
     Properties:
+      TableName: 'Products'
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions:
         - AttributeName: id

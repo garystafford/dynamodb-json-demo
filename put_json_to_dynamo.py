@@ -6,12 +6,10 @@ import boto3
 # Set up logging
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
-# boto3.set_stream_logger('botocore', level=logging.DEBUG)
+boto3.set_stream_logger('botocore', level=logging.DEBUG)
 
+TABLE_NAME = 'Products'
 client = boto3.client('dynamodb')
-
-# CHANGE ME!
-table = 'dynamodb-product-stack-DemoTable-1F1E0UEKYGSUR'
 
 
 def read_json():
@@ -29,7 +27,7 @@ def read_json():
 def put_products(product):
     try:
         client.put_item(
-            TableName=table,
+            TableName=TABLE_NAME,
             Item={
                 'id': {'S': product['id']},
                 'name': {'S': product['name']},
