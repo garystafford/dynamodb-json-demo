@@ -6,12 +6,11 @@ import boto3
 # Set up logging
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
-logger.info('Loading function')
 # boto3.set_stream_logger('botocore', level=logging.DEBUG)
 
 client = boto3.client('dynamodb')
 
-# change me!
+# CHANGE ME!
 table = 'dynamodb-product-stack-DemoTable-1F1E0UEKYGSUR'
 
 
