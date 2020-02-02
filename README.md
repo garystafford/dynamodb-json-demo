@@ -20,7 +20,6 @@ aws cloudformation delete-stack \
 
 ## References
 - <https://github.com/GoogleCloudPlatform/microservices-demo>
--<https://github.com/GoogleCloudPlatform/microservices-demo/blob/master/src/productcatalogservice/products.json>
--<https://github.com/blueCycle>
--<http://a9b80aacd3e7011ea9e5b02173f1f8f2-1644737622.us-east-2.elb.amazonaws.com/cart>
--<https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/go/example_code/dynamodb>
+- <https://github.com/GoogleCloudPlatform/microservices-demo/blob/master/src/productcatalogservice/products.json>
+- <https://github.com/blueCycle>
+- <http://a9b80aacd3e7011ea9e5b02173f1f8f2-1644737622.us-east-2.elb.amazonaws.com/cart>
