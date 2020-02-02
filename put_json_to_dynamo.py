@@ -33,9 +33,9 @@ def put_products(product):
                 'name': {'S': product['name']},
                 'description': {'S': product['description']},
                 'picture': {'S': product['picture']},
-                'priceUsd': {
+                'price_usd': {
                     'M': {
-                        'currencyCode': {
+                        'currency_code': {
                             'S': product['priceUsd']['currencyCode']
                         },
                         'units': {
